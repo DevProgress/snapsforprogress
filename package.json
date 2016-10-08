@@ -1,0 +1,33 @@
+{
+  "name": "snaps-for-progress",
+  "version": "0.0.1",
+  "description": "Snapchat filters for progressive campaigns",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "express": "4.13.3",
+    "less-middleware": "^2.2.0",
+    "nunjucks": "^2.4.2"
+  },
+  "engines": {
+    "node": "4.6.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/devprogress/snapsforprogress.git"
+  },
+  "keywords": [
+    "node",
+    "heroku",
+    "express"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/devprogress/snapsforprogress/issues"
+  },
+  "homepage": "https://github.com/devprogress/snapsforprogress#readme",
+  "devDependencies": {},
+  "author": "Sophia Westwood"
+}

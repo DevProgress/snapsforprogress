@@ -1,0 +1,7 @@
+{
+  "name": "Snaps for Progress",
+  "description": "Snapchat filters for progressive campaigns",
+  "repository": "https://github.com/devprogress/snaps-for-progress",
+  "keywords": ["node", "express", "static"],
+  "image": "heroku/nodejs"
+}

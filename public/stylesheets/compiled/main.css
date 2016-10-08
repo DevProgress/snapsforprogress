@@ -1,0 +1,54 @@
+body {
+  padding: 0px;
+  margin: 0px;
+  font-family: "Roboto Mono", "Courier", "sans-serif";
+}
+body a,
+body a:visited,
+body a:hover {
+  text-decoration: none;
+  color: blue;
+}
+nav {
+  background-color: #f8f8f8;
+  height: 30px;
+  text-align: right;
+}
+nav .nav-items {
+  text-align: right;
+  padding-top: 4px;
+  padding-right: 10px;
+}
+.header {
+  background-color: #0050a9;
+  width: 100%;
+  height: 180px;
+  border-bottom: 10px solid red;
+}
+.header h1 {
+  color: white;
+  font-size: 60px;
+  text-align: left;
+  margin-left: 60px;
+  padding-top: 30px;
+}
+.header h1:after {
+  position: relative;
+  content: "";
+  left: -60px;
+  top: 100px;
+  background-color: red;
+  width: 730px;
+  height: 4px;
+  display: block;
+  top: 8px;
+}
+.header .subheader {
+  margin-top: 20px;
+  font-size: 20px;
+  margin-left: 120px;
+  color: rgba(255, 255, 255, 0.9);
+}
+.content {
+  margin: 20px 130px;
+}
