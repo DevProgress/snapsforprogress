@@ -106,18 +106,19 @@ nav .nav-items .nav-item {
 }
 h2 {
   font-size: 20px;
+  font-weight: 700;
   margin: 36px 0px 20px 0px;
 }
 p {
   margin-left: 10px;
-  line-height: 1.4em;
+  line-height: 1.7em;
 }
 .filters-section {
   margin-left: 10px;
 }
 .filters-section .filter-name {
   margin-bottom: 21px;
-  font-weight: 700;
+  font-weight: 500;
   text-transform: uppercase;
   border-bottom: 1px solid #bbb;
   padding-bottom: 7px;
@@ -138,14 +139,17 @@ ul {
   margin-bottom: 10px;
 }
 ul li {
-  line-height: 1.4em;
+  line-height: 1.7em;
 }
 ol {
-  list-style-type: initial;
+  list-style-type: decimal;
   margin-left: 50px;
   margin-top: 10px;
   margin-bottom: 10px;
 }
 ol li {
-  line-height: 1.4em;
+  line-height: 1.7em;
+}
+ol ol {
+  margin-top: 0px;
 }

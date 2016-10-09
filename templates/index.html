@@ -2,11 +2,57 @@
 
 {% block body %}
 
-<h2>Enabling a filter for your event</h2>
-<p>A step by step guide to using these filters for your next campaign event! <i>(in progress)</i></p>
+<h2>The filters!</h2>
+<p>Open and free to distribute.</p>
+<div class="filters-section">
+    {% for filter in [
+        {"name": "Hope Donkey", "path": "images/filter-hope-donkey.png", "examples": ["filter-hope-donkey-example-1.jpg", "filter-hope-donkey-example-2.jpg", "filter-hope-donkey-example-3.jpg"]}
+    ] %}
+        <div class="filter">
+            <div class="filter-name">{{ filter.name }}
+                <span class="download-filter">
+                    <a class="download" download={{ filter.path }} href={{ filter.path }} title="Hope Donkey Filter">
+                        Download
+                    </a>
+                </span>
+            </div>
+            <div class="filter-examples">
+                <a class="download" download={{ filter.path }} href={{ filter.path }} title="Hope Donkey Filter">
+                    <img src={{ filter.path }} width="150px"/>
+                </a>
+                {% for example in filter.examples %}
+                    <img src={{ "images/" + example }} width="150px"/>
+                {% endfor %}
+            </div>
+    {% endfor %}
 
-<h2>Why? Snapchat for non-millennials</h2>
-<p>Millennials use Snapchat to take ugly selfies (and other pics) that expire in 10 seconds to send their 30 closest friends. When the typical Millennial is out and about, they have share what they are doing on social media, otherwise it never happened. Using Snapchat Filters in their Snaps lets their friends know where they are, without having to explicitly say where they are. Filters makes photos more fun and adds an element of accomplishment. You have to be in a specific area to unlock certain filters, giving a feeling of instant gratification and achievement.</p>
+    <div class="filter">
+        <div class="filter-name">
+            More coming
+        </div>
+        <div><i>(check back in a week)</i></div>
+    </div>
+</div>
+
+
+<h2>Why create a Snapchat filter?</h2>
+<p>Creating a filter for your event generates excitement for attendees who use Snapchat! It's a fun way for people to share their excitement about Hillary and other progressive candidates. The first thing some of your attendees will do at your event will be to take a photo (a snap) and check out if there are any cool filters to apply. Then, they will send it to their friends. A filter makes your event more of a "thing" for people who use Snapchat -- it feels special since it can only be unlocked for a particular time and place.</p>
+
+<h2>How do I make one?</h2>
+<ol>
+    <li>Think of a time (a few hours to a few days is best) and a place (a block to a few blocks). For ideas, see below!</li>
+    <li>Choose one of the filters below -- or <a href="https://quip.com/6LlcA6FX4wbJ">make your own</a>.</li>
+    <li>Find a Snapchat account -- use your own, or create a new one by installing the app on your phone.</li>
+    <li>Go to the <a href="https://www.snapchat.com/on-demand">on-demand filter</a> Snapchat page and create a new Personal filter.</li>
+    <ol>
+        <li>Click "Use your own" and upload your filter. Give it a name!</li>
+        <li>Select the time range. Then select the geographical area -- make it a little larger than necessary just in case. Preview the price.</li>
+        <li>Set the type to "Personal" for your event and pay!</li>
+        <li>You will receive an email (usually within an hour or two) saying whether your filter was approved.</li>
+        <li>After it is approved, anyone using Snapchat within the geographical area during the time you set will be able to use your filter!</li>
+        <li>To use the filter, open Snapchat, take a photo, and swipe right -- you should see other filters, and eventually your own! Then you can send it to friends. (Note that sometimes the phone's GPS is inaccurate, so it may not work 100% of the time.)</li>
+    </ol>
+</ol>
 
 <h2>When and where?</h2>
     <p>Millennial-vetted ideas for how to use these filters in ways other millennials will appreciate.
@@ -18,38 +64,13 @@
     <p>Then, millennials at these events will send pictures with your filter to their friends and feel validated.</p>
 </p>
 
-<h2>The filters!</h2>
-<p>Open and free to distribute.</p>
-    <div class="filters-section">
-        {% for filter in [
-            {"name": "Hope Donkey", "path": "images/filter-hope-donkey.png", "examples": ["filter-hope-donkey-example-1.jpg", "filter-hope-donkey-example-2.jpg", "filter-hope-donkey-example-3.jpg"]}
-        ] %}
-            <div class="filter">
-                <div class="filter-name">{{ filter.name }}
-                    <span class="download-filter">
-                        <a class="download" download={{ filter.path }} href={{ filter.path }} title="Hope Donkey Filter">
-                            Download
-                        </a>
-                </div>
-                <div class="filter-examples">
-                    <a class="download" download={{ filter.path }} href={{ filter.path }} title="Hope Donkey Filter">
-                        <img src={{ filter.path }} width="150px"/>
-                    </a>
-                    {% for example in filter.examples %}
-                        <img src={{ "images/" + example }} width="150px"/>
-                    {% endfor %}
-                </div>
-        {% endfor %}
+<h2>What is Snapchat? (for non-millennials)</h2>
+<p>Millennials use Snapchat to take selfies (and other pics) that expire in 10 seconds to send their 30 closest friends. When the typical Millennial is out and about, they want to share what they are doing on social media, otherwise it never happened. Using Snapchat Filters in their Snaps lets their friends know where they are, without having to explicitly say where they are. Filters makes photos more fun and adds an element of accomplishment. You have to be in a specific area to unlock certain filters, giving a feeling of instant gratification and achievement.</p>
 
-        <div class="filter">
-            <div class="filter-name">
-                More coming!
-            </div>
-            <div><i>(in progress)</i></div>
-        </div>
 
-<h2>How to contribute</h2>
-<p>Reach out to me (<a href="https://twitter.com/sophiawestwood">@sophiawestwood</a>) on Twitter with ideas / new filters.</p>
 
-</div>
+
+<h2>Questions? Contributions?</h2>
+<p>Reach out to me (<a href="https://twitter.com/sophiawestwood">@sophiawestwood</a>) on Twitter with ideas / new filters, or with questions if anything is unclear.</p>
+
 {% endblock %}
