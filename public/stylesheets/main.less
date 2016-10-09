@@ -1,9 +1,47 @@
 // lessc main.less  > compiled/main.css
 
+@font-face {
+  font-family: SharpUnity;
+  font-style: normal;
+  font-weight: 100;
+  src: url(../fonts/SharpUnity-Book.ttf) format("truetype"), url(../fonts/SharpUnity-Book.woff) format("woff"), url(../fonts/SharpUnity-Book.woff2) format("woff2");
+}
+@font-face {
+  font-family: SharpUnity;
+  font-style: italic;
+  font-weight: 100;
+  src: url(../fonts/SharpUnity-BookItalic.ttf) format("truetype"), url(../fonts/SharpUnity-BookItalic.woff) format("woff"), url(../fonts/SharpUnity-BookItalic.woff2) format("woff2");
+}
+@font-face {
+  font-family: SharpUnity;
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/SharpUnity-Semibold.ttf) format("truetype"), url(../fonts/SharpUnity-Semibold.woff) format("woff"), url(../fonts/SharpUnity-Semibold.woff2) format("woff2");
+}
+@font-face {
+  font-family: SharpUnity;
+  font-style: italic;
+  font-weight: 400;
+  src: url(../fonts/SharpUnity-SemiboldItalic.ttf) format("truetype"), url(../fonts/SharpUnity-SemiboldItalic.woff) format("woff"), url(../fonts/SharpUnity-SemiboldItalic.woff2) format("woff2");
+}
+@font-face {
+  font-family: SharpUnity;
+  font-style: normal;
+  font-weight: 800;
+  src: url(../fonts/SharpUnity-Extrabold.ttf) format("truetype"), url(../fonts/SharpUnity-Extrabold.woff) format("woff"), url(../fonts/SharpUnity-Extrabold.woff2) format("woff2");
+}
+@font-face {
+  font-family: SharpUnity;
+  font-style: italic;
+  font-weight: 800;
+  src: url(../fonts/SharpUnity-ExtraboldItalic.ttf) format("truetype"), url(../fonts/SharpUnity-ExtraboldItalic.woff) format("woff"), url(../fonts/SharpUnity-ExtraboldItalic.woff2) format("woff2");
+}
+
+
 body {
   padding: 0px;
   margin: 0px;
-  font-family: "Roboto Mono", "Courier", "sans-serif";
+  font-family: "SharpUnity", "Roboto Mono", "Courier", "sans-serif";
   a, a:visited, a:hover {
       text-decoration: none;
       color: blue;
@@ -75,6 +113,7 @@ nav {
 
 h2 {
     font-size: 20px;
+    font-weight: 700;
     margin: 36px 0px 20px 0px
 }
 p {
@@ -85,7 +124,7 @@ p {
     margin-left: 10px;
     .filter-name {
         margin-bottom: 21px;
-        font-weight: 700;
+        font-weight: 500;
         text-transform: uppercase;
         border-bottom: 1px solid #bbb;
         padding-bottom: 7px;
@@ -102,6 +141,15 @@ p {
 }
 ul {
     list-style-type: circle;
+    margin-left: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    li {
+        line-height: 1.4em;
+    }
+}
+ol {
+    list-style-type: initial;
     margin-left: 50px;
     margin-top: 10px;
     margin-bottom: 10px;
