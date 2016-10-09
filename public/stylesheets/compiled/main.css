@@ -127,6 +127,7 @@ p {
 .filters-section .filter-name .download {
   text-transform: lowercase;
   font-size: .8em;
+  margin-left: 5px;
 }
 .filters-section img {
   border: 1px solid #d7d7d7;
