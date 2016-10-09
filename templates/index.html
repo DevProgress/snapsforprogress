@@ -3,15 +3,45 @@
 {% block body %}
 
 <h2>Enabling a filter for your event</h2>
-<p>A step by step guide to using these filters for your next campaign event! <i>(under progress)</i></p>
+<p>A step by step guide to using these filters for your next campaign event! <i>(in progress)</i></p>
 
 <h2>Help! Snapchat for non-millennials</h2>
-<p>An explanation of what a filter is, why you might want one, and how to not be basic. <i>(under progress)</i></p>
+<p>An explanation of what a filter is, why you might want one, and how to not be basic. <i>(in progress)</i></p>
 
 <h2>When and where</h2>
-<p>Millennial-vetted ideas for how to use these filters in ways other millennials will appreciate.<i>(under progress)</i></p>
+<p>Millennial-vetted ideas for how to use these filters in ways other millennials will appreciate.<i>(in progress)</i></p>
 
-<h2>The filters!</h2>
-<p>TODO</p>
+<h2>How to contribute</h2>
+<p>Reach out to me (<a href="https://twitter.com/sophiawestwood">@sophiawestwood</a>) on Twitter with ideas / filters</p>
 
+<h2>The filters</h2>
+<p>Open and free to distribute.</p>
+    <div class="filters-section">
+        {% for filter in [
+            {"name": "Hope Donkey", "path": "images/filter-hope-donkey.png", "examples": ["filter-hope-donkey-example-1.jpg", "filter-hope-donkey-example-2.jpg", "filter-hope-donkey-example-3.jpg"]}
+        ] %}
+            <div class="filter">
+                <div class="filter-name">{{ filter.name }}
+                    <span class="download-filter">
+                        <a class="download" download={{ filter.path }} href={{ filter.path }} title="Hope Donkey Filter">
+                            Download
+                        </a>
+                </div>
+                <div class="filter-examples">
+                    <a class="download" download={{ filter.path }} href={{ filter.path }} title="Hope Donkey Filter">
+                        <img src={{ filter.path }} width="150px"/>
+                    </a>
+                    {% for example in filter.examples %}
+                        <img src={{ "images/" + example }} width="150px"/>
+                    {% endfor %}
+                </div>
+        {% endfor %}
+
+        <div class="filter">
+            <div class="filter-name">
+                More coming!
+            </div>
+            <div><i>(in progress)</i></div>
+        </div>
+</div>
 {% endblock %}

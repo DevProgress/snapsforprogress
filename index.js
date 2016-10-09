@@ -13,6 +13,14 @@ app.set("port", (process.env.PORT || 5000));
 
 app.use(express.static(__dirname + "/public"));  // For our CSS, images, and Javascript
 
+// Strip trailing space for pngs
+app.use(function(req, res, next) {
+   if(req.url.substr(-1) == "/" && req.url.length > 1)
+       res.redirect(301, req.url.slice(0, -1));
+   else
+       next();
+});
+
 // See http://stackoverflow.com/questions/19912389/how-to-use-html-in-express-framework-with-nunjucks-no-jade for examples
 nunjucks.configure("templates", {
   // Do some configuration
@@ -32,7 +40,7 @@ app.get("/", function(request, response) {
 
 app.get( "/:page.html", function(request, response) {
     response.render(request.params.page + ".html");
-} ) ;
+});
 
 app.listen(app.get("port"), function() {
   console.log("We're up and running! Open localhost:" + app.get("port") + " in your browser." +
